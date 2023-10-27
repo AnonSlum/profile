@@ -122,14 +122,24 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  height: 40px;
+  height: 80px;
   font-size: 14px;
   transition: all 0.5s;
   z-index: 996;
+  background-color: #843c0c;
+  
+}
+
+#topbar .logo img {
+  max-height: 200px;
+  margin-left: -100px;
+  height: auto; /* This ensures the image maintains its aspect ratio */
+  display: block; /* This removes any extra space around the image */
+  max-width: 100%;
 }
 
 #topbar.topbar-scrolled {
-  top: -40px;
+  top: -200px;
 }
 
 #topbar .contact-info i {
@@ -156,7 +166,7 @@ h6 {
 }
 
 #topbar .languages ul li+li {
-  padding-left: 10px;
+  padding-left: 0;
 }
 
 #topbar .languages ul li+li::before {
@@ -175,7 +185,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
+  top: 80px;
 }
 
 #header.header-scrolled {
@@ -247,6 +257,8 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .navbar li {
